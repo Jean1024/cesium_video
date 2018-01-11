@@ -1,0 +1,14 @@
+html,body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#cesiumContainer{
+  height: 100%;
+}
+.controler{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 998;
+}

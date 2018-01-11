@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三维组件</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<style>
+  @import url(lib/widgets.css);
+  html,
+  body,
+  #cesiumContainer {
+      background: #0a1837!important;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+  }
+  .cesium-viewer-bottom {
+      display: none;
+  }
+</style>
+<body> 
+  <div id="cesiumContainer"></div>
+  <div class="controler">
+    <button id="videoAdd">视频</button>
+    <!-- <button>图片集</button> -->
+  </div>
+  <video id="trailer" autoplay="" loop="" crossorigin="" controls="">
+    <source src="./images/base/air_traffic_2800.mp4" type="video/mp4">
+    Your browser does not support the <code>video</code> element.
+  </video>
+  <script src="lib/Cesium.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
